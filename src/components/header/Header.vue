@@ -17,7 +17,7 @@
             {{ totalCard() }}
           </button>
           <div v-for="page in pages" :key="page.path">
-            <router-link :to="page.path">
+            <router-link class="header__nav_user-img" :to="page.path">
               <img :src="page.img" alt="" />
             </router-link>
           </div>
@@ -31,7 +31,7 @@
 import { mapActions, mapState } from "vuex";
 export default {
   props: {
-    pages:  { typeof: Array, Object },
+    pages: { typeof: Array, Object },
   },
   methods: {
     ...mapActions(["btnActive"]),

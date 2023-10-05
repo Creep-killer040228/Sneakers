@@ -1,7 +1,7 @@
 <template>
   <router-link :to="'/'" class="back">
-    <img src="../../assets/img/back-btn.svg" alt="" />Вернуться назад</router-link
-  >
+    <img src="../../assets/img/back-btn.svg" alt="" />Вернуться назад
+  </router-link>
   <div class="home" v-if="card.length">
     <div class="home-card">
       <img :src="'/img/' + getCard.images" class="home-card-img" alt="" />
