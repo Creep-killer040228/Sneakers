@@ -1,0 +1,151 @@
+.basket {
+  button {
+    cursor: pointer;
+  }
+
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+
+  &__opacity {
+    overflow: hidden;
+    background: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+
+  &__title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    position: fixed;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    max-width: 385px;
+    width: 100%;
+    padding: 32px 30px;
+    background: #fff;
+    box-shadow: -10px 4px 24px 0px rgba(0, 0, 0, 0.1);
+    height: 100%;
+
+    &_empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 90%;
+
+      & h3 {
+        color: #000;
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 21px;
+        margin-bottom: 9px;
+      }
+
+      & p {
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 285px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+
+    &_card {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &_btn {
+      position: absolute;
+      bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      &-span {
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .line {
+          position: relative;
+          top: 5px;
+          width: 167px;
+          height: 1px;
+          flex-shrink: 0;
+          border: 1px dashed #dfdfdf;
+        }
+      }
+
+      & button {
+        border-radius: 18px;
+        background: #9dd458;
+        width: 325px;
+        height: 55px;
+        padding: 18px 33px 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+.basket-card {
+  width: 320px;
+  height: 119px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  border: 1px solid #f3f3f3;
+  align-items: center;
+  justify-content: center;
+
+  &-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  &-span {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 21px;
+    margin-right: 12px;
+
+    h3 {
+      color: #000;
+      font-size: 14px;
+      font-weight: 400;
+      width: 150px;
+    }
+
+  }
+
+
+}
